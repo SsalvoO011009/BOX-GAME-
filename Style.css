@@ -86,15 +86,12 @@ h1{
 
     top:0;
 
-    
-    /* Effetto morbido */
     transition:0.2s;
 
 }
 
-
-/* Quando passi sopra col mouse */
-#rosso:hover{
+/* Colore mentre clicchi */
+#rosso:active{
 
     background:lightgreen;
 
