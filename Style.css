@@ -8,9 +8,6 @@ body{
 
 }
 
-
-
-
 #container{
 
     display:flex;
@@ -22,9 +19,6 @@ body{
     margin-top:30px;
 
 }
-
-
-
 
 #sinistra{
 
@@ -42,9 +36,6 @@ body{
 
 }
 
-
-
-
 #centro{
 
     margin-left:40px;
@@ -55,16 +46,11 @@ body{
 
 }
 
-
-
 h1{
 
     color:red;
 
 }
-
-
-
 
 #gioco{
 
@@ -86,9 +72,6 @@ h1{
 
 }
 
-
-
-
 #rosso{
 
     width:40px;
@@ -103,10 +86,19 @@ h1{
 
     top:0;
 
+    
+    /* Effetto morbido */
+    transition:0.2s;
+
 }
 
 
+/* Quando passi sopra col mouse */
+#rosso:hover{
 
+    background:lightgreen;
+
+}
 
 #destra{
 
@@ -123,8 +115,6 @@ h1{
     padding:20px;
 
 }
-
-
 
 button{
 
@@ -144,24 +134,17 @@ button{
 
 }
 
-
-
 #tempo{
 
     font-size:35px;
 
 }
 
-
-
 #punti{
 
     font-size:35px;
 
 }
-
-
-
 
 #popup{
 
@@ -185,8 +168,6 @@ button{
 
 }
 
-
-
 #popupInterno{
 
     width:400px;
@@ -200,8 +181,6 @@ button{
     color:black;
 
 }
-
-
 
 #chiudi{
 
