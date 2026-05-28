@@ -9,8 +9,41 @@ let partito = false;
 let pausa = false;
 
 
+/* Lista colori */
+let colori = [
+
+    "red",
+    "blue",
+    "green",
+    "yellow",
+    "purple",
+    "orange",
+    "pink",
+    "cyan",
+    "lime",
+    "gold"
+
+];
 
 
+/* Prende il quadrato */
+let rosso = document.getElementById("rosso");
+
+
+/* Colore iniziale casuale */
+cambiaColore();
+
+
+function cambiaColore(){
+
+    let numero = Math.floor(Math.random() * colori.length);
+
+    rosso.style.background = colori[numero];
+
+}
+
+
+/* Timer */
 function avviaTimer(){
 
     timer = setInterval(function(){
@@ -37,9 +70,8 @@ function avviaTimer(){
 }
 
 
-
-
-document.getElementById("rosso").onclick = function(){
+/* Click sul quadrato */
+rosso.onclick = function(){
 
     if(tempo > 0){
 
@@ -48,14 +80,21 @@ document.getElementById("rosso").onclick = function(){
         document.getElementById("punti").innerHTML = punti;
 
 
+        /* Cambia colore */
+        cambiaColore();
+
+
+        /* Posizione casuale */
         let x = Math.floor(Math.random() * 12) * 40;
 
         let y = Math.floor(Math.random() * 12) * 40;
 
-        document.getElementById("rosso").style.left = x + "px";
+        rosso.style.left = x + "px";
 
-        document.getElementById("rosso").style.top = y + "px";
+        rosso.style.top = y + "px";
 
+
+        /* Avvia timer */
         if(partito == false){
 
             partito = true;
@@ -69,8 +108,7 @@ document.getElementById("rosso").onclick = function(){
 }
 
 
-
-
+/* Pausa */
 document.getElementById("pausa").onclick = function(){
 
     if(pausa == false){
@@ -87,8 +125,7 @@ document.getElementById("pausa").onclick = function(){
 }
 
 
-
-
+/* Restart */
 document.getElementById("restart").onclick = function(){
 
     location.reload();
@@ -96,8 +133,7 @@ document.getElementById("restart").onclick = function(){
 }
 
 
-
-
+/* Popup info */
 document.getElementById("info").onclick = function(){
 
     document.getElementById("popup").style.display = "flex";
@@ -105,8 +141,7 @@ document.getElementById("info").onclick = function(){
 }
 
 
-
-
+/* Chiudi popup */
 document.getElementById("chiudi").onclick = function(){
 
     document.getElementById("popup").style.display = "none";
