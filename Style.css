@@ -78,22 +78,17 @@ h1{
 
     height:40px;
 
-    background:green;
-
     position:absolute;
 
     left:0;
 
     top:0;
 
+    cursor:pointer;
+
     transition:0.2s;
 
-}
-
-/* Colore mentre clicchi */
-#rosso:active{
-
-    background:lightgreen;
+    border-radius:5px;
 
 }
 
@@ -128,6 +123,14 @@ button{
     cursor:pointer;
 
     width:180px;
+
+    font-size:16px;
+
+}
+
+button:hover{
+
+    background:deepskyblue;
 
 }
 
@@ -177,6 +180,8 @@ button{
 
     color:black;
 
+    border-radius:10px;
+
 }
 
 #chiudi{
@@ -202,5 +207,7 @@ button{
     right:-15px;
 
     cursor:pointer;
+
+    font-weight:bold;
 
 }
