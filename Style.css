@@ -1,0 +1,230 @@
+body{
+
+    background:white;
+
+    margin:0;
+
+    font-family:Arial;
+
+}
+
+
+
+
+#container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    margin-top:30px;
+
+}
+
+
+
+
+#sinistra{
+
+    width:220px;
+
+    height:550px;
+
+    background:lightgray;
+
+    border-right:5px solid gray;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+
+#centro{
+
+    margin-left:40px;
+
+    margin-right:40px;
+
+    text-align:center;
+
+}
+
+
+
+h1{
+
+    color:red;
+
+}
+
+
+
+
+#gioco{
+
+    width:480px;
+
+    height:480px;
+
+    background:#dddddd;
+
+    border:5px solid gray;
+
+    position:relative;
+
+    background-image:
+    linear-gradient(to right, gray 1px, transparent 1px),
+    linear-gradient(to bottom, gray 1px, transparent 1px);
+
+    background-size:40px 40px;
+
+}
+
+
+
+
+#rosso{
+
+    width:40px;
+
+    height:40px;
+
+    background:green;
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+}
+
+
+
+
+#destra{
+
+    width:220px;
+
+    height:550px;
+
+    background:lightgray;
+
+    border-left:5px solid gray;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+button{
+
+    background:lightblue;
+
+    color:black;
+
+    border:none;
+
+    padding:12px;
+
+    margin-top:10px;
+
+    cursor:pointer;
+
+    width:180px;
+
+}
+
+
+
+#tempo{
+
+    font-size:35px;
+
+}
+
+
+
+#punti{
+
+    font-size:35px;
+
+}
+
+
+
+
+#popup{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,0.5);
+
+    top:0;
+
+    left:0;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+#popupInterno{
+
+    width:400px;
+
+    background:lightblue;
+
+    padding:30px;
+
+    position:relative;
+
+    color:black;
+
+}
+
+
+
+#chiudi{
+
+    width:35px;
+
+    height:35px;
+
+    background:red;
+
+    color:white;
+
+    border-radius:50%;
+
+    text-align:center;
+
+    line-height:35px;
+
+    position:absolute;
+
+    top:-15px;
+
+    right:-15px;
+
+    cursor:pointer;
+
+}
