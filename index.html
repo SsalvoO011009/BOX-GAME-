@@ -1,94 +1,77 @@
 <!DOCTYPE html>
 <html lang="it">
-
-<head>
-
-    <meta charset="UTF-8">
-
+  <head>
+    <meta charset="utf-8">
     <title>BOX GAME</title>
-
-    <link rel="stylesheet" href="Style.css">
-
-</head>
-
-<body>
-
-<div id="container">
-
-    <!-- MENU -->
-    <div id="sinistra">
-
-        <h2>MENU</h2>
-
-        <button id="restart">RIPROVA</button>
-
-        <button id="pausa">PAUSA</button>
-
-    </div>
-
-
-    <!-- GIOCO -->
-    <div id="centro">
-
-        <h1>BOX GAME</h1>
-
-        <div id="gioco">
-
-            <!-- QUADRATO -->
-            <div id="rosso"></div>
-
-        </div>
-
-        <h2 id="fine"></h2>
-
-    </div>
-
-
-    <!-- INFO -->
-    <div id="destra">
-
-        <h2>INFORMAZIONI</h2>
-
-        <p>COUNTDOWN</p>
-
-        <span id="tempo">10</span>
-
-        <br><br>
-
-        <p>PUNTI</p>
-
-        <span id="punti">0</span>
-
-        <br><br>
-
-        <button id="info">ISTRUZIONI</button>
-
-    </div>
-
-</div>
-
-
-<!-- POPUP -->
-<div id="popup">
-
-    <div id="popupInterno">
-
-        <div id="chiudi">X</div>
-
-        <p>
-
-            Questo è un giochino che funziona nel seguente modo:
-            clicca più volte il quadrato colorato nel meno tempo possibile.
-
-        </p>
-
-    </div>
-
-</div>
-
-
-<!-- JAVASCRIPT ALLA FINE -->
-<script src="Script.js"></script>
-
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+	  *{
+		  margin: 0;
+		  padding: 0;
+	  }
+	  body, html{
+		  margin: 0;
+		  padding: 0;
+	  }
+	  
+	  .container{
+		  display: flex;
+		  height: 100vh;
+		  align-items: center;
+		  text-align: center;
+		  justify-content: center;
+	  }
+	  
+	  .container .box{
+		  display: flex;
+		  flex-direction: column;
+		  gap: 20px;
+		  align-item: center;
+		  border: 2px solid grey;
+		  padding: 2rem;
+		  width: fit-content;
+		  height: fit-content;
+		  background-color: lightgray;
+		  
+	  }
+	  
+	  .container .box h1{
+		  color: red;
+	  }
+	  
+	  .container .box input{
+		  padding: 0.5rem;
+	  }
+	  
+	  .container .box .bottone{
+		  cursor: pointer;
+		  background-color: lightblue;
+		  border: none;
+		  padding: 0.5rem;
+		}
+		
+		.container .box .bottone .testo{
+			text-decoration: none;
+			color: black;
+		}
+	  
+	  
+  </style>
+  
+  <body>
+	  <div class="container">
+		  <div class="box">
+			  <h1>BOX - GAME!</h1>
+			  <input type="text" placeholder="Inserisci il nome">
+			  <button class="bottone">
+				  <a href="HTML/gioco.html" class="testo">
+					  GIOCA
+				  </a>
+			  </button>
+		  </div>
+	  </div>
+	  
+	  
+  </body>
 </html>
